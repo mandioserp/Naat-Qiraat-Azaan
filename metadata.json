@@ -1,0 +1,6 @@
+{
+  "name": "Inter-House Naat, Qiraat & Azan Competition Registration",
+  "description": "Official online registration portal for students across Classes 1-10 to register for Naat, Qiraat, and Azan inter-house competitions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

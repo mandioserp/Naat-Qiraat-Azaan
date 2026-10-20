@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "Registration": {
+      "title": "Registration",
+      "description": "Student registration for Inter-House Naat, Qiraat, and Azan Competition",
+      "type": "object",
+      "properties": {
+        "admNo": {
+          "type": "string",
+          "description": "Student Admission Number",
+          "minLength": 1,
+          "maxLength": 30
+        },
+        "name": {
+          "type": "string",
+          "description": "Full Name of Student",
+          "minLength": 2,
+          "maxLength": 100
+        },
+        "studentClass": {
+          "type": "string",
+          "description": "Class from 1 to 10",
+          "enum": [
+            "Class One", "Class Two", "Class Three", "Class Four", "Class Five",
+            "Class Six", "Class Seven", "Class Eight", "Class Nine", "Class Ten"
+          ]
+        },
+        "event": {
+          "type": "string",
+          "description": "Competition Event",
+          "enum": ["Naat", "Qiraat", "Azan"]
+        },
+        "house": {
+          "type": "string",
+          "description": "School House",
+          "enum": ["Jinnah", "Fatima", "Sir Syed", "Ayesha", "Iqbal", "Khadijah"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of registration"
+        }
+      },
+      "required": ["admNo", "name", "studentClass", "event", "house", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/registrations/{registrationId}": {
+      "schema": "Registration",
+      "description": "Collection of all submitted student competition registrations"
+    }
+  }
+}

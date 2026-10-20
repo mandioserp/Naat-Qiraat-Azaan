@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #7B1113;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+/* Sleek Interface Theme Specific Utilities */
+.bg-sleek-maroon {
+  background-color: #7B1113;
+}
+
+.bg-sleek-maroon-dark {
+  background-color: #630d0f;
+}
+
+.text-sleek-maroon {
+  color: #7B1113;
+}
+
+.border-sleek-maroon {
+  border-color: #7B1113;
+}
+
+.sleek-card-shadow {
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.4);
+}
+
+.sleek-input {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.sleek-input:focus {
+  background-color: #ffffff;
+  border-color: #7B1113;
+  box-shadow: 0 0 0 3px rgba(123, 17, 19, 0.12);
+  outline: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a0a3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B1113;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
