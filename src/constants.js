@@ -1,5 +1,4 @@
 export const CLASSES = [
-  'Class One',
   'Class Two',
   'Class Three',
   'Class Four',

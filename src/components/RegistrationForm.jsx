@@ -368,14 +368,13 @@ export function RegistrationForm({ onSuccess }) {
                     <span>Admission No</span>
                     <span className="text-[#7B1113]">*</span>
                   </span>
-                  <span className="text-[10px] text-gray-400 font-normal">e.g. 2024-001</span>
                 </label>
                 <div className="relative">
                   <input
                     id="admNo"
                     type="text"
                     required
-                    placeholder="e.g. 2024-001"
+                    placeholder="e.g. 4527"
                     value={admNo}
                     onChange={(e) => handleAdmNoChange(e.target.value)}
                     onBlur={() => handleBlur('admNo')}
