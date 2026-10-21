@@ -79,7 +79,7 @@ export function Header({
             transition={{ duration: 0.4, delay: 0.2 }}
             className="text-white/75 text-xs sm:text-sm md:text-base max-w-2xl mt-1.5 leading-relaxed font-light"
           >
-            Student Registration Portal • Classes 1 to 10 • Jinnah, Fatima, Sir Syed, Ayesha, Iqbal & Khadijah Houses
+            Student Registration Portal • Classes 2 to 10 • Jinnah, Fatima, Sir Syed, Ayesha, Iqbal & Khadijah Houses
           </motion.p>
 
           {/* Three Event Category Tags */}

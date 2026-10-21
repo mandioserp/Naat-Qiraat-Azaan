@@ -185,7 +185,7 @@ service cloud.firestore {
                       Inter-House Naat, Qiraat & Azan Competition
                     </h2>
                     <p className="text-xs sm:text-sm text-white/75">
-                      Open to all students from Class One to 10 across Jinnah, Fatima, Sir Syed, Ayesha, Iqbal, and Khadijah Houses.
+                      Open to all students from Class Two to 10 across Jinnah, Fatima, Sir Syed, Ayesha, Iqbal, and Khadijah Houses.
                     </p>
                   </div>
 
