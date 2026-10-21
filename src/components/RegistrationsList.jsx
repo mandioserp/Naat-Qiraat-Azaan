@@ -79,10 +79,11 @@ export function RegistrationsList({
   // Export to CSV
   const handleExportCSV = () => {
     if (filteredRegistrations.length === 0) return;
-    const headers = ['Adm No', 'Student Name', 'Class', 'Event', 'House', 'Registration Date'];
+    const headers = ['Adm No', 'Student Name', 'Gender', 'Class', 'Event', 'House', 'Registration Date'];
     const rows = filteredRegistrations.map((r) => [
       `"${r.admNo}"`,
       `"${r.name}"`,
+      `"${r.gender || ''}"`,
       `"${r.studentClass}"`,
       `"${r.event}"`,
       `"${r.house}"`,
